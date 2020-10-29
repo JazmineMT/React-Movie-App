@@ -4,6 +4,15 @@ import React from 'react'
 
 export default function DisplayMovieCard({movie}){
   
+    const setVoteClass = (vote) => {
+        if(vote >= 8 ){
+            return 'green'
+        } else if(vote >= 6 ){
+            return 'orange'
+        } else{
+            return 'red'
+        }
+    }
 
 
     return (
@@ -14,7 +23,9 @@ export default function DisplayMovieCard({movie}){
             />
         <div className='display--content'>
          <h3 className='display--title'> {movie.title}</h3>
-         <p><small>{movie.vote_average}</small></p>
+         <span className={
+             `tag ${setVoteClass(movie.vote_average)}`}>
+                 {movie.vote_average}</span>
         </div>
         <div className='movie-over'>
              <h2 className='desc'>Overview :</h2>

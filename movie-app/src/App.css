@@ -9,8 +9,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(244,244,244) ;
-  color: #333;
+  background-color:#2c303d ;
+  color: #fff;
 }
 
 p{
@@ -38,6 +38,9 @@ small {
 
 .form {
   display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
 }
 
 .label {
@@ -51,13 +54,13 @@ input {
   padding: .5rem 2rem;
   line-height: 2.8rem;
   border-radius: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   margin-bottom:  1rem;
 }
 
 .button {
-  background-color: rgb(0,0,0,0.75);
-  color: white;
+  background-color: rgb(0,0,0,1);
+  color: #fff;
   padding: 1rem 2rem;
   border: 1px solid  rgb(0,0,0,0.75);
   border-radius: 1.4rem;
@@ -122,13 +125,13 @@ input {
 .displayTitle{
   display: flex;
   flex-wrap: wrap;
-  color:  #333;
+  color:  #fff;
   padding: 2%;
   
 }
 .display{
   margin: 1rem;
-  background-color: white;
+  background-color: #343946 ;
   box-shadow: 1px 1px 5px rgb(0,0,0,0.1);
   position: relative;
   border-radius: 3px;
@@ -140,7 +143,7 @@ input {
 
 .display--content{
   display: flex;
-  padding: 1.5rem;
+  padding: 1%;
   align-items: center;
   justify-content: space-between;
   
@@ -154,18 +157,18 @@ input {
 
 
 .movie-over {
-  background-color: white;
+  background-color: #fff;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  transform:  translateY(100%);
+  transform:  translateY(102%);
   transition: transform 0.3s ease-in-out;
   overflow: auto;
   max-height: 100%;
-  
+  color:  rgb(0,0,0,1);
   
  
 }
@@ -181,4 +184,24 @@ input {
 
 .desc {
   padding: 1%;
+}
+
+.tag {
+  background-color: #2c303d ;
+  padding: 0.5rem;
+  border-radius:  5px;
+  font-size: 2rem;
+
+}
+
+.tag.green{
+  color: green
+}
+
+.tag.orange{
+  color: orange
+}
+
+.tag.red{
+  color: red
 }
